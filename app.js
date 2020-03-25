@@ -12,8 +12,16 @@ const coffeeMocha = { name: 'Coffee Mocha', popularity: 8 };
 
 const chocolate = { name: 'Chocolate', popularity: 10 };
 
-const iceCreamFlavors = [vanilla, orangeSherbert, strawberry, coffeeMocha, chocolate];
+const spumoni = { name: 'Spumoni', popularity: 10 };
+
+const iceCreamFlavors = [vanilla, orangeSherbert, strawberry, coffeeMocha, chocolate, spumoni];
 
 for (let i = 0; i < iceCreamFlavors.length; i++) {
     console.log(iceCreamFlavors[i]);
 };
+
+function logOutThings() {
+    console.log('Here are your', iceCreamFlavors.length, 'things!');
+};
+
+logOutThings();
