@@ -12,7 +12,7 @@ const coffeeMocha = { name: 'Coffee Mocha', popularity: 8 };
 
 const chocolate = { name: 'Chocolate', popularity: 10 };
 
-const spumoni = { name: 'Spumoni', popularity: 10 };
+const spumoni = { name: 'Spumoni', popularity: 11 };
 
 const iceCreamFlavors = [vanilla, orangeSherbert, strawberry, coffeeMocha, chocolate, spumoni];
 
@@ -20,6 +20,14 @@ function logOutThings() {
     console.log('Here are your', iceCreamFlavors.length, 'things!');
     for (let i = 0; i < iceCreamFlavors.length; i++) {
         console.log(iceCreamFlavors[i]);
+
+        if (iceCreamFlavors[i].popularity > 6) {
+            console.log('A popular flavor.');
+        }
+        else {
+                console.log('Not very popular.');
+        }
+        
     };
 };
 
